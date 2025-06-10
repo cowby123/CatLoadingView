@@ -4,8 +4,7 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 35
-    buildToolsVersion "30.0.3"
-
+    namespace "com.roger.catloadinglibrary"
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 35
