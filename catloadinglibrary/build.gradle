@@ -3,7 +3,14 @@ apply plugin: 'kotlin-parcelize'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 35
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+
+
+    }
+
+        compileSdkVersion 35
     namespace "com.roger.catloadinglibrary"
     defaultConfig {
         minSdkVersion 19
@@ -22,6 +29,7 @@ android {
     viewBinding {
         enabled = true
     }
+
 }
 
 dependencies {
